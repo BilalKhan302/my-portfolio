@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NL2Shell | LLM Research</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Bilal<span>.</span></a>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="../index.html#projects" class="btn-link"><i class="fas fa-arrow-left"></i> Back to Work</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="project-hero" style="padding: 160px 0 80px; background: var(--bg-secondary);">
+        <div class="container">
+            <div class="reveal">
+                <span class="status-badge completed">LLMs</span>
+                <h1>Natural Language to Shell</h1>
+                <p style="font-size: 1.2rem; color: var(--text-muted); margin-top: 1.5rem;">Bridging the gap between
+                    natural language and technical CLI commands using fine-tuned T5 models.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section reveal">
+            <h2>The Vision</h2>
+            <p>Command-line interfaces are powerful but have a steep learning curve. NL2Shell allows users to express
+                their intent in plain English and automatically translates it into executable shell commands.</p>
+
+            <h2 style="margin-top: 4rem;">Implementation Details</h2>
+            <p>Utilized a <strong>Pretrained T5 model</strong> as the backbone. The model was fine-tuned on a custom
+                dataset, <strong>NI2shell</strong>, specifically curated for system administration and DevOps tasks.
+                This resulted in an encoder-decoder architecture that understands technical context beyond simple
+                keyword matching.</p>
+
+            <div class="tech-tags" style="margin-top: 2rem;">
+                <span>HuggingFace</span><span>PyTorch</span><span>NLP</span><span>T5-Text2Text</span>
+            </div>
+        </section>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

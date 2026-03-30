@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance AI | System Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Bilal<span>.</span></a>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="../index.html#projects" class="btn-link"><i class="fas fa-arrow-left"></i> Back to Work</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="project-hero" style="padding: 160px 0 80px; background: var(--bg-secondary);">
+        <div class="container">
+            <div class="reveal">
+                <span class="status-badge completed">Security</span>
+                <h1>Automated AI Attendance</h1>
+                <p style="font-size: 1.2rem; color: var(--text-muted); margin-top: 1.5rem;">A secure, automated
+                    attendance system leveraging Hybrid Vision Transformers and ResNet with integrated anti-spoofing.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section reveal">
+            <h2>Project Overview</h2>
+            <p>Traditional facial recognition attendance systems are vulnerable to presentation attacks (photos,
+                deepfakes). This project focuses on building a "Liveness" verified system that ensures physical
+                presence.</p>
+
+            <h2 style="margin-top: 4rem;">Technical Methodology</h2>
+            <p>The core engine uses a <strong>Hybrid Transformer-ResNet</strong> architecture. ResNet handles local
+                feature extraction for face geometry, while the Vision Transformer (ViT) captures global dependencies
+                and subtle liveness cues (e.g., micro-movements, texture analysis).</p>
+
+            <h3 style="margin-top: 4rem;">Security Components</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 1rem;"><i class="fas fa-shield-alt" style="color: var(--primary);"></i>
+                    <strong>Anti-Spoofing:</strong> DeepFake detection using temporal analysis.
+                </li>
+                <li style="margin-bottom: 1rem;"><i class="fas fa-microchip" style="color: var(--primary);"></i>
+                    <strong>ResNet-50:</strong> Robust facial feature embedding.
+                </li>
+                <li style="margin-bottom: 1rem;"><i class="fas fa-bolt" style="color: var(--primary);"></i>
+                    <strong>Real-time Inference:</strong> Optimized for edge deployment.
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion AI | Machine Learning Research</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .project-hero {
+            padding: 160px 0 80px;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .detail-section {
+            padding: 80px 0;
+        }
+
+        .tech-list {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Bilal<span>.</span></a>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="../index.html#projects" class="btn-link"><i class="fas fa-arrow-left"></i> Back to Work</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="project-hero">
+        <div class="container">
+            <div class="reveal">
+                <span class="status-badge ongoing">Research</span>
+                <h1>Parameter-Efficient Emotion Control</h1>
+                <p style="font-size: 1.2rem; color: var(--text-muted); margin-top: 1.5rem;">A state-of-the-art framework
+                    for controlling emotional intensity in image generation using Dynamic LoRa and VA values.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="detail-section reveal">
+            <h2>Problem Statement</h2>
+            <p>Traditional emotion control in AI generation relies on discrete labels (e.g., "happy", "sad"), which
+                fails to capture the continuous nature of human affect. Furthermore, full model fine-tuning for specific
+                emotions is computationally expensive and rigid.</p>
+
+            <h2 style="margin-top: 4rem;">Methodology & Approach</h2>
+            <p>This research introduces a <strong>Parameter-Efficient Framework</strong> utilizing <strong>Dynamic
+                    LoRa</strong> modules. Instead of fixed categories, we map emotions onto the <strong>Valence-Arousal
+                    (VA)</strong> space, allowing for nuanced intensity control. By implementing a <strong>Base +
+                    Delta</strong> training option, we achieved significant parameter reduction while maintaining high
+                fidelity in subtle expressions.</p>
+
+            <h3 style="margin-top: 4rem;">Key Features</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--primary);"></i>
+                    Image-to-Image transfer with precise emotion mapping.</li>
+                <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--primary);"></i>
+                    Surpassing SOTA (State Of The Art) results in affect-intensity evaluations.</li>
+                <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--primary);"></i>
+                    Optimized for parameter reduction without quality loss.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

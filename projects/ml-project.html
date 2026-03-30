@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML & AI Projects | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .project-hero {
+            padding: 160px 0 80px;
+            background: linear-gradient(135deg, rgba(94, 92, 230, 0.05) 0%, transparent 100%);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .detail-section {
+            padding: 80px 0;
+        }
+
+        .ml-case-study {
+            margin-bottom: 6rem;
+            padding: 3rem;
+            background: var(--bg-secondary);
+            border-radius: 32px;
+            border: 1px solid var(--border);
+        }
+
+        .ml-case-study h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Bilal<span>.</span></a>
+            <div class="nav-actions">
+                <a href="../index.html#projects" class="btn-link"><i class="fas fa-arrow-left"></i> Back to Work</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="project-hero">
+        <div class="container">
+            <div class="reveal">
+                <span class="status-badge completed">Research</span>
+                <h1 style="font-size: clamp(2.5rem, 6vw, 4rem); margin-top: 1rem;">Machine Learning & <br>Generative AI
+                </h1>
+                <p style="font-size: 1.25rem; color: var(--text-muted); max-width: 700px; margin-top: 1.5rem;">
+                    A collection of high-impact research projects focusing on Parameter-Efficient Fine-Tuning (PEFT),
+                    Computer Vision, and Emotion-Aware AI systems.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="detail-section">
+
+            <!-- Case Study 1 -->
+            <div class="ml-case-study reveal">
+                <span class="journal-tag"
+                    style="color: var(--primary); font-weight: 700; margin-bottom: 1rem; display: block;">Published in
+                    IJCV (Q1)</span>
+                <h2>Emotion Control in Diffusion Models</h2>
+                <p style="margin-bottom: 2rem;">Developed a parameter-efficient framework to control emotional intensity
+                    in generative image models. By utilizing Dynamic LoRa and VA (Valence-Arousal) values, the system
+                    achieves nuanced control over facial expressions and atmospheric mood without full model
+                    re-training.</p>
+                <div class="tech-tags">
+                    <span>Stable Diffusion</span>
+                    <span>Dynamic LoRa</span>
+                    <span>PEFT</span>
+                    <span>PyTorch</span>
+                </div>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="ml-case-study reveal">
+                <h2>AI Attendance & Anti-Spoofing</h2>
+                <p style="margin-bottom: 2rem;">A hybrid framework combining ResNet and Vision Transformers (ViT) for
+                    automated attendance tracking with advanced liveness detection. The system detects deepfakes and
+                    print attacks in real-time with 99.2% accuracy.</p>
+                <div class="tech-tags">
+                    <span>ResNet</span>
+                    <span>Transformers</span>
+                    <span>DeepFake Security</span>
+                    <span>TensorFlow</span>
+                </div>
+            </div>
+
+            <!-- Case Study 3 -->
+            <div class="ml-case-study reveal">
+                <h2>Geological AI Analysis</h2>
+                <p style="margin-bottom: 2rem;">Investigated the implications of Deep Learning in mineral exploration,
+                    identifying key patterns in hyperspectral data to predict mineral deposits with high confidence.</p>
+                <div class="tech-tags">
+                    <span>Hyperspectral AI</span>
+                    <span>Data Science</span>
+                    <span>Predictive Modeling</span>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer style="margin-top: 4rem;">
+        <div class="container">
+            <p>&copy; 2026 Bilal Khan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeenIslam App | Project Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .project-hero {
+            padding: 160px 0 80px;
+            background: linear-gradient(135deg, rgba(46, 204, 113, 0.05) 0%, transparent 100%);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .meta-item h4 {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .detail-section {
+            padding: 80px 0;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Bilal<span>.</span></a>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="../index.html#projects" class="btn-link"><i class="fas fa-arrow-left"></i> Back to Work</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="project-hero">
+        <div class="container">
+            <div class="reveal">
+                <span class="status-badge ongoing">Ongoing</span>
+                <h1 style="font-size: clamp(2.5rem, 6vw, 4rem); margin-top: 1rem;">DeenIslam App</h1>
+                <p style="font-size: 1.25rem; color: var(--text-muted); max-width: 700px; margin-top: 1.5rem;">
+                    A modern, minimalist Islamic mobile applications focusing on spiritual guidance, real-time data
+                    accuracy, and exceptional user experience using Flutter.
+                </p>
+
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <h4>Role</h4>
+                        <p>Lead Developer & UI Designer</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Tech Stack</h4>
+                        <p>Flutter, Firebase, Cloud Functions, REST</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Platform</h4>
+                        <p>iOS & Android</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="detail-section reveal">
+            <div class="detail-grid">
+                <div class="content-block">
+                    <h2 style="margin-bottom: 1.5rem;">Problem Statement</h2>
+                    <p>Many Islamic apps are cluttered with intrusive ads and outdated UI/UX patterns. Users often
+                        struggle with inaccurate prayer timings due to poor location algorithms or inconsistent data
+                        sync across devices. There was a clear need for a "premium" alternative that respects the user's
+                        focus and provides precise religious data.</p>
+                </div>
+                <div class="content-block">
+                    <h2 style="margin-bottom: 1.5rem;">The Approach</h2>
+                    <p>We prioritized a "User-First" design philosophy, utilizing Apple's Human Interface Guidelines for
+                        the iOS experience while maintaining a consistent Material Design 3 feel on Android. We built a
+                        robust backend on Firebase to handle real-time prayer time calculations and Quranic audio
+                        streaming with low latency.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-section reveal" style="border-top: 1px solid var(--border);">
+            <h2 style="margin-bottom: 3rem;">Core Features</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-clock"></i> Precision Timings</h3>
+                    <p>Advanced astronomical algorithms that calculate prayer timings with high precision based on GPS
+                        coordinates, supporting multiple calculation methods globally.</p>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-quran"></i> Immersive Quran</h3>
+                    <p>A beautiful reading experience with customizable typography, multiple translations, and
+                        high-quality recitations available for offline listening.</p>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-compass"></i> Qibla Finder</h3>
+                    <p>Real-time AR-based Qibla compass that provides an interactive way to find direction accurately
+                        anywhere in the world.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-section reveal" style="border-top: 1px solid var(--border);">
+            <h2 style="margin-bottom: 1.5rem;">Tech Stack Details</h2>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">Built with efficiency and scalability in mind.</p>
+            <div class="tech-tags">
+                <span>Flutter BLoC</span>
+                <span>Hive DB</span>
+                <span>Firebase Auth</span>
+                <span>Cloud Firestore</span>
+                <span>Google Maps API</span>
+            </div>
+        </section>
+    </main>
+
+    <footer style="margin-top: 4rem;">
+        <div class="container">
+            <p>&copy; 2026 Bilal Khan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
